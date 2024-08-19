@@ -2,6 +2,8 @@ import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import IntroSection from './section1-Intro/IntroSection';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -28,7 +30,8 @@ export default function Scroll() {
   );
 
   return (
-    <div>
+    <ParallaxProvider>
+      <IntroSection />
       <section className="section flex-center column">
         <h2>Basic ScrollTrigger with React</h2>
         <p>Scroll down to see the magic happen!!</p>
@@ -39,6 +42,7 @@ export default function Scroll() {
         <div className="box gradient-blue">box</div>
       </div>
       <section className="section"></section>
-    </div>
+    </ParallaxProvider>
+    
   );
 }
