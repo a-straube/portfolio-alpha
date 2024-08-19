@@ -35,6 +35,12 @@
   filter: invert(1) hue-rotate(102deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(2px 4px 6px #000000) brightness(0.95);
   height: 28vh;
 }
+#movingWater {
+  position: absolute;
+  bottom: 8vh;
+  height: 12vh;
+  width: 100%;
+}
 #mountain3 {
   bottom: 0;
   left: -37%;
