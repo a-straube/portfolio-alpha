@@ -1,8 +1,21 @@
 #introSection {
   background: linear-gradient(to bottom, #108DC5, #ef8e38 62%, #0a5b81);
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+#sun {
+  background: radial-gradient(circle, #efb938 33%, #ef8e38 100%);
+  border: 1px solid #ffbc59;
+  border-radius: 50%;
+  box-shadow: 0 0 40px #ffbc59;
+  filter: blur(2px);
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  top: 42%;
+  right: 28vw;
 }
 .mountain {
   background: url('../img/Pngtree-mountain-landscape_8807747.png') repeat-x;
@@ -12,7 +25,7 @@
 #mountain1 {
   background-size: auto 38%;
   filter: invert(1) hue-rotate(8deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(2px 4px 6px #000000) brightness(0.6);
-  bottom: 8vh;
+  bottom: 6vh;
   height: 36vh;
 }
 #mountain2 {
