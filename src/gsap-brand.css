@@ -442,11 +442,6 @@ h4 {
   line-height: 1.2;
 }
 
-h1,
-.h1 {
-  font-size: var(--step-4);
-}
-
 h2,
 .h2 {
   font-size: var(--step-3);
