@@ -10,10 +10,6 @@
 .water-row:before,
 .water-row:after {
   content: '';
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
   background: url('../img/ocean-wave-paint-brush-stroke-1.png') repeat-x;
   background-size: auto 100%;
   opacity: 0.88;
@@ -22,35 +18,11 @@
   width: 100%;
 }
 .water-row:before {
-  -webkit-animation-name: backwardMovement;
-  -webkit-animation-duration: 1680s;
-  animation-name: backwardMovement;
-  animation-duration: 1680s;
   bottom: 28%;
   height: 100%;
 }
 .water-row:after {
-  -webkit-animation-name: forwardMovement;
-  -webkit-animation-duration: 980s;
-  animation-name: forwardMovement;
-  animation-duration: 980s;
   bottom: -15%;
   height: 110%;
   filter: hue-rotate(344deg);
-}
-@keyframes forwardMovement {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 1000%;
-  }
-}
-@keyframes backwardMovement {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: -1000%;
-  }
 }
