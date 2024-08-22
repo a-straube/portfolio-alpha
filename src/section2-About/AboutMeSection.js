@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+import imgs from '.././img/imgs';
 
 function AboutMeSection() {
     return (
@@ -26,7 +27,11 @@ function AboutMeSection() {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <div id="deskItems"></div>
+                <div id="deskItems">
+                    <img src={imgs.plant1} alt="Picture of houseplant" />
+                    <img src={imgs.axelPic} alt="Picture of Axel in front of a piano" />
+                    <img src={imgs.plant2} alt="Picture of houseplant" />
+                </div>
             </div>
         </section>
     );
