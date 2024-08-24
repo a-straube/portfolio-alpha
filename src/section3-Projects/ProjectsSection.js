@@ -1,15 +1,23 @@
+import FruitProject from './FruitProject';
+import imgs from '.././img/imgs';
+
 function ProjectSection() {
     return (
         <section>
-            <div id="trelloProject" className="fruit-project-container">
-                <div className="fruit">
-                    <div className="inside-fruit">
-                        <a href="https://a-straube.github.io/trello-project-mgmt-dashboard/" target="_blank">
-                            <h4>Trello Project Management Dashboard</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <FruitProject
+                title="Trello Project Management Dashboard"
+                link="https://a-straube.github.io/trello-project-mgmt-dashboard/"
+                fruitLeft={imgs.coconutHandLeft}
+                fruitRight={imgs.coconutHandRight}
+                screenshot={imgs.trelloScreenshot}
+            />
+            <FruitProject
+                title="Archives: Mahindra Build-Your-Own Tractor"
+                link="https://web.archive.org/web/20221013003710/https://www.mahindrausa.com/--byo-max-26-xlt-hst"
+                fruitLeft={imgs.pineappleHandLeft}
+                fruitRight={imgs.pineappleHandRight}
+                screenshot="https://web.archive.org/web/20221013003713im_/https://www.mahindrausa.com/images/pages/byo/byo-max-26-xlt-hst.jpg"
+            />
         </section>
     );
 }
