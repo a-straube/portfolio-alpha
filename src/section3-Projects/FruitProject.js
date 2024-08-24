@@ -1,6 +1,6 @@
-function FruitProject({ title, link, fruitLeft, fruitRight, screenshot }) {
+function FruitProject({ id, title, link, fruitLeft, fruitRight, screenshot }) {
     return (
-        <div className="fruit-project-container">
+        <div id={id} className="fruit-project-container">
             <div className="fruit">
                 <img src={fruitLeft} alt="Left hand holding fruit" />
                 <div className="inside-fruit">

@@ -5,6 +5,7 @@ function ProjectSection() {
     return (
         <section>
             <FruitProject
+                id="trelloProject"
                 title="Trello Project Management Dashboard"
                 link="https://a-straube.github.io/trello-project-mgmt-dashboard/"
                 fruitLeft={imgs.coconutHandLeft}
@@ -12,6 +13,7 @@ function ProjectSection() {
                 screenshot={imgs.trelloScreenshot}
             />
             <FruitProject
+                id="mahindraProject"
                 title="Archives: Mahindra Build-Your-Own Tractor"
                 link="https://web.archive.org/web/20221013003710/https://www.mahindrausa.com/--byo-max-26-xlt-hst"
                 fruitLeft={imgs.pineappleHandLeft}
