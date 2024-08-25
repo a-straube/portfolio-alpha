@@ -1,0 +1,104 @@
+#trelloProject {
+  bottom: -3vh;
+  left: 54vw;
+  height: 42vh;
+}
+#trelloProject .fruit {
+  height: 100%;
+}
+#trelloProject .fruit > img {
+  bottom: 0;
+  width: 50%;
+}
+#trelloProject .fruit > img:first-child {
+  left: 1%;
+}
+#trelloProject .fruit > img:last-child {
+  left: 48%;
+}
+#trelloProject .fruit:hover > img:first-child,
+#trelloProject .fruit:focus > img:first-child,
+#trelloProject .fruit:active > img:first-child {
+  left: -10%;
+}
+#trelloProject .fruit:hover > img:last-child,
+#trelloProject .fruit:focus > img:last-child,
+#trelloProject .fruit:active > img:last-child {
+  left: 59%;
+}
+#mahindraProject {
+  bottom: 12vh;
+  left: 0;
+}
+#mahindraProject img {
+  max-height: 69vh;
+}
+#mahindraProject h3 {
+  font-size: 26px;
+}
+#mahindraProject h3 > span {
+  font-size: 18px;
+}
+#mahindraProject .fruit > img:first-child {
+  top: -52vh;
+  z-index: 1;
+}
+#mahindraProject .fruit > img:last-child {
+  transition: all 1s ease-in-out;
+  top: -54vh;
+  left: 2vw;
+}
+#mahindraProject .fruit:hover > img:first-child,
+#mahindraProject .fruit:focus > img:first-child,
+#mahindraProject .fruit:active > img:first-child {
+  left: -3vw;
+  transform: rotate3d(1, -2, 1, -18deg);
+}
+#mahindraProject .fruit:hover > img:last-child,
+#mahindraProject .fruit:focus > img:last-child,
+#mahindraProject .fruit:active > img:last-child {
+  left: 3vw;
+  transform: rotate3d(3, 11, 4, 22deg);
+}
+#mahindraProject .inside-fruit {
+  top: -27vh;
+  left: 32%;
+  max-width: 170px;
+}
+.fruit-project-container {
+  display: inline-block;
+  height: 30vh;
+  width: 30vw;
+  max-width: 500px;
+  position: absolute;
+}
+.fruit {
+  height: 100%;
+  position: relative;
+}
+.fruit > img {
+  position: absolute;
+}
+.fruit .inside-fruit {
+  transition: 0.6s all ease-in-out;
+  opacity: 0;
+  z-index: -5;
+}
+.fruit:hover .inside-fruit,
+.fruit:focus .inside-fruit,
+.fruit:active .inside-fruit {
+  opacity: 1;
+  z-index: 1;
+}
+.inside-fruit {
+  left: -25%;
+  max-width: 300px;
+  position: relative;
+  text-align: center;
+}
+.inside-fruit h4 {
+  font-weight: 100;
+}
+.inside-fruit img {
+  width: 70%;
+}

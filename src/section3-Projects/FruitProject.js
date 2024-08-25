@@ -1,3 +1,5 @@
+import './FruitProject.css';
+
 function FruitProject({ id, title, link, fruitLeft, fruitRight, screenshot }) {
     return (
         <div id={id} className="fruit-project-container">
