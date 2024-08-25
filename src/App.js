@@ -7,6 +7,7 @@ import IntroSection from './section1-Intro/IntroSection';
 import AboutMeSection from './section2-About/AboutMeSection';
 import ProjectsSection from './section3-Projects/ProjectsSection';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import './global-styles.css';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
