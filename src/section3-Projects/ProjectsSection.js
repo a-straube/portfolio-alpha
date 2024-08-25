@@ -1,9 +1,10 @@
 import FruitProject from './FruitProject';
 import imgs from '.././img/imgs';
+import './ProjectsSection.css';
 
 function ProjectSection() {
     return (
-        <section>
+        <section id="projectsSection">
             <FruitProject
                 id="trelloProject"
                 title="Trello Project Management Dashboard"
