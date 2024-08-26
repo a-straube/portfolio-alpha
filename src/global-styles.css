@@ -2,3 +2,11 @@ section {
   height: 100vh;
   position: relative;
 }
+.section-content {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
