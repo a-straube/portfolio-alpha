@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import imgs from '.././img/imgs';
+import './AboutMeSection.css';
 
 function AboutMeSection() {
     return (
         <section id="aboutMeSection">
-            <div id="window"></div>
             <div className="section-content">
                 <div id="lamp">Placeholder</div>
-                <Carousel>
+                <Carousel id="book">
                     <Carousel.Item>
                         <Carousel.Caption>
                             <h3>About Me</h3>
@@ -27,11 +27,11 @@ function AboutMeSection() {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <div id="deskItems">
-                    <img src={imgs.plant1} alt="Picture of houseplant" />
-                    <img src={imgs.axelPic} alt="Picture of Axel in front of a piano" />
-                    <img src={imgs.plant2} alt="Picture of houseplant" />
+                <img src={imgs.plant1} id="deskPlant1" alt="Picture of houseplant" />
+                <div id="picture">
+                    <span id="pictureFrame"><img src={imgs.axelPic} alt="Picture of Axel in front of a piano" /></span>
                 </div>
+                <img src={imgs.plant2} id="deskPlant2" alt="Picture of houseplant" />
             </div>
         </section>
     );

@@ -1,0 +1,113 @@
+#aboutMeSection {
+  background: #fffec6;
+  display: flex;
+  align-items: flex-end;
+}
+#aboutMeSection .section-content {
+  z-index: 1;
+}
+#aboutMeSection:after {
+  content: '';
+  background: url('../img/wood.jpg') bottom;
+  background-size: cover;
+  filter: brightness(0.44) contrast(0.95);
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+@media (min-width: 760px) {
+  #aboutMeSection:after {
+    height: 38vh;
+  }
+}
+#book {
+  min-height: 55vh;
+  position: absolute;
+  bottom: 15vh;
+  left: 10%;
+  z-index: 2;
+}
+@media (min-width: 760px) {
+  #book {
+    left: 6%;
+    width: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  #book {
+    left: 10vw;
+  }
+}
+#book:after {
+  content: '';
+  background: url('../img/Pngtree-book-open-clipart-7903102.png') center no-repeat;
+  background-size: contain;
+  height: 166%;
+  width: 117%;
+  position: absolute;
+  top: -23vh;
+  left: -6vw;
+  transform: rotate(-9deg) skewY(-6deg);
+}
+@media (max-width: 760px) {
+  #book:after {
+    display: none;
+  }
+}
+.carousel-caption {
+  color: #000000;
+}
+#deskPlant1 {
+  max-width: 248px;
+  position: relative;
+  bottom: 16vh;
+  right: -33vw;
+  z-index: 1;
+}
+@media (max-width: 1200px) {
+  #deskPlant1 {
+    display: none;
+  }
+}
+#picture {
+  position: relative;
+  bottom: 21vh;
+  right: -14vw;
+  width: 27%;
+}
+@media (max-width: 992px) {
+  #picture {
+    display: none;
+  }
+}
+#deskPlant2 {
+  max-width: 266px;
+  position: relative;
+  bottom: 13vh;
+  right: 1vw;
+  z-index: 1;
+}
+#pictureFrame {
+  background-color: #ebe7db;
+  border: 11px solid #42342f;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.75);
+  display: block;
+  position: relative;
+  transform: perspective(100vh) rotateY(-32deg) rotateX(9deg);
+}
+#pictureFrame:after {
+  content: '';
+  background-color: #42342f;
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate3d(3deg);
+}
+#pictureFrame img {
+  border: 20px solid #ebe7db;
+  border-radius: 24px;
+  width: 100%;
+}
