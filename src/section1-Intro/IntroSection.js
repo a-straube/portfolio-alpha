@@ -1,6 +1,6 @@
 import { Parallax } from 'react-scroll-parallax';
 import './IntroSection.css';
-import MovingWater from './MovingWater'
+import MovingWater from '../global-components/MovingWater'
 
 function IntroSection() {
     return (
