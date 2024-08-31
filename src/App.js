@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import IntroSection from './section1-Intro/IntroSection';
 import AboutMeSection from './section2-About/AboutMeSection';
 import ProjectsSection from './section3-Projects/ProjectsSection';
+import ConnectSection from './section4-Connect/ConnectSection';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import './global-styles.css';
 
@@ -38,6 +39,7 @@ export default function Scroll() {
       <IntroSection />
       <AboutMeSection />
       <ProjectsSection />
+      <ConnectSection />
       <div className="section flex-center column" ref={main}>
         <div className="box gradient-blue">box</div>
         <div className="box gradient-blue">box</div>
