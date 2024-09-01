@@ -1,0 +1,86 @@
+@import './../global-variables.less';
+
+section#connectSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 0;
+    padding: 12vh 0;
+    @media(min-width: @screen-sm) { padding: 20vh 120px; }
+    @media(min-width: @screen-lg) { flex-direction: row; } 
+    &:after {
+        content: '';
+        background-color: rgb(238, 245, 220);
+        box-shadow: 0 0 12px #000000;
+        height: 100%;
+            width: 100%;
+        position: absolute;
+            top: 0;
+            left: 0;
+        transform: skewY(355deg);
+        z-index: -1;
+    }
+    h3 {
+        font-size: 40px;
+        font-weight: 100;
+        letter-spacing: 6px;
+        padding-bottom: 4vh;
+        @media(min-width: @screen-sm) { font-size: 62px; }
+        @media(min-width: @screen-lg) {
+            font-size: 58px;
+            padding: 0 6vw 0 0;
+        }
+        @media(min-width: 1500px) { font-size: 106px; }
+    }
+    >div {
+        border-top: 2px solid black;
+        padding: 3vh 25px;
+        position: relative;
+        @media(min-width: @screen-sm) { padding: 4vh 0; }
+        @media(min-width: @screen-lg) {
+            border-top: none;
+            border-left: 2px solid black;
+            padding: 6vh 0 6vh 6vw;
+        }
+        &:after {
+            content: '';
+            background: url('../img/Axel.png') no-repeat;
+            background-size: auto 100%;
+            height: 150px; width: 275px;
+            position: absolute; bottom: -11h; right: -1vw;
+        }
+    }
+    span {
+        font-family: 'Waiting for the Sunrise', cursive;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        padding-right: 30px;
+        @media(min-width: @screen-sm) {
+            font-size: 26px;
+            line-height: 2.5;
+        }
+    }
+}
+
+.new-line-span { display: block; }
+
+#connectList {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 48px;
+    list-style: none;
+    padding-left: 0;
+    a {
+        color: darkslateblue;
+        margin-right: 40px;
+        position: relative;
+            top: 0;
+        &:hover, &:focus, &:active {
+            color: #5440d9;
+            top: -1px;
+        }
+    }
+}
