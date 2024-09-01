@@ -1,8 +1,8 @@
 import './MovingWater.css';
 
-function MovingWater() {
+function MovingWater({id}) {
     return (
-        <div>
+        <div id={id}>
             <div className="water-row"></div>
             <div className="water-row"></div>
             <div className="water-row"></div>
