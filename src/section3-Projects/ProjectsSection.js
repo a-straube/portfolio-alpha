@@ -1,4 +1,5 @@
 import FruitProject from './FruitProject';
+import MovingWater from '../global-components/MovingWater';
 import imgs from '.././img/imgs';
 import './ProjectsSection.css';
 
@@ -21,6 +22,7 @@ function ProjectSection() {
                 fruitRight={imgs.pineappleHandRight}
                 screenshot="https://web.archive.org/web/20221013003713im_/https://www.mahindrausa.com/images/pages/byo/byo-max-26-xlt-hst.jpg"
             />
+            <MovingWater id="projectsWater" />
         </section>
     );
 }
