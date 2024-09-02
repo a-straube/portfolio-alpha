@@ -1,11 +1,17 @@
 import './MovingWater.css';
 
-function MovingWater({id}) {
+function MovingWater({ id }) {
     return (
         <div id={id}>
-            <div className="water-row"></div>
-            <div className="water-row"></div>
-            <div className="water-row"></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
+            <div className='water-row'></div>
         </div>
     )
 }
