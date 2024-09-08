@@ -1,3 +1,4 @@
+import { Parallax } from 'react-scroll-parallax';
 import FruitProject from './FruitProject';
 import MovingWater from '../global-components/MovingWater';
 import imgs from '.././img/imgs';
@@ -22,7 +23,9 @@ function ProjectSection() {
                 fruitRight={imgs.pineappleHandRight}
                 screenshot="https://web.archive.org/web/20221013003713im_/https://www.mahindrausa.com/images/pages/byo/byo-max-26-xlt-hst.jpg"
             />
-            <MovingWater id="projectsWater" />
+            <Parallax speed={-40}>
+                <MovingWater id="projectsWater" />
+            </Parallax>
         </section>
     );
 }

@@ -3,3 +3,9 @@
   background-attachment: fixed;
   overflow: hidden;
 }
+#projectsWater {
+  height: 11vh;
+  width: 100%;
+  position: relative;
+  bottom: -20vh;
+}
