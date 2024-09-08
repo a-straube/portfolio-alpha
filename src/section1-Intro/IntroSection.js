@@ -14,6 +14,9 @@ function IntroSection() {
             <Parallax speed={-44}>
                 <h1><span><span id='h1LetterA'>A</span>xel</span> <span>Straube</span></h1>
             </Parallax>
+            <Parallax speed={-8} id='h2'>
+                <h2><span>Front-End</span> <span>Developer</span></h2>
+            </Parallax>
             <Parallax id='mountain3' className='mountain'></Parallax>
         </section>
     );

@@ -5,6 +5,18 @@
   position: relative;
   overflow: hidden;
 }
+#sun {
+  background: radial-gradient(circle, #efb938 33%, #ef8e38 100%);
+  border: 1px solid #ffbc59;
+  border-radius: 50%;
+  box-shadow: 0 0 40px #ffbc59;
+  filter: blur(2px);
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  top: 42%;
+  right: 28vw;
+}
 h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,17 +37,29 @@ h1 > span {
   font-weight: 700;
   letter-spacing: -3vw;
 }
-#sun {
-  background: radial-gradient(circle, #efb938 33%, #ef8e38 100%);
-  border: 1px solid #ffbc59;
-  border-radius: 50%;
-  box-shadow: 0 0 40px #ffbc59;
-  filter: blur(2px);
-  height: 280px;
-  width: 280px;
+#h2 {
+  font-family: 'Beth Ellen', sans-serif;
   position: absolute;
-  top: 42%;
-  right: 28vw;
+  top: 40vh;
+  right: 18vw;
+}
+#h2 span {
+  display: block;
+  text-align: right;
+}
+h2 > span:before {
+  content: '';
+  background-size: cover;
+  height: 150%;
+  width: 150%;
+  position: absolute;
+  z-index: -1;
+}
+h2 > span:first-child:before {
+  background-image: url('../img/watercolor-cloud-1.png');
+}
+h2 > span:last-child:before {
+  background-image: url('../img/watercolor-cloud-2.png');
 }
 .mountain {
   background: url('../img/Pngtree-mountain-landscape_8807747.png') repeat-x;
