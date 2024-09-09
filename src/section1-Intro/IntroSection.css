@@ -102,7 +102,7 @@ h2 > span:last-child:before {
 }
 #mountain2 {
   background-size: auto 89%;
-  bottom: 17vh;
+  bottom: 16vh;
   left: -53%;
   filter: invert(1) hue-rotate(102deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(2px 4px 6px #000000) brightness(0.95);
   height: 28vh;
@@ -114,7 +114,7 @@ h2 > span:last-child:before {
   width: 100%;
 }
 #mountain3 {
-  bottom: 0;
+  bottom: -8vh;
   left: -37%;
   filter: invert(1) hue-rotate(180deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(0px -2px 4px rgba(30, 28, 26, 0.75)) brightness(0.75);
   height: 20vw;

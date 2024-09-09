@@ -7,7 +7,7 @@ function IntroSection() {
         <section id='introSection'>
             <Parallax speed={4} id='sun'></Parallax>
             <Parallax speed={-40} id='mountain1' className='mountain'></Parallax>
-            <Parallax speed={-30} id='mountain2' className='mountain'></Parallax>
+            <Parallax speed={-34} id='mountain2' className='mountain'></Parallax>
             <Parallax speed={-28} id='movingWater'>
                 <MovingWater />
             </Parallax>
@@ -17,7 +17,7 @@ function IntroSection() {
             <Parallax speed={-8} id='h2'>
                 <h2><span>Front-End</span> <span>Developer</span></h2>
             </Parallax>
-            <Parallax id='mountain3' className='mountain'></Parallax>
+            <Parallax speed={-8} id='mountain3' className='mountain'></Parallax>
         </section>
     );
 }
