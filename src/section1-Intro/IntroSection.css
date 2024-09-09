@@ -27,15 +27,43 @@ h1 {
   background-position: 0%;
   filter: drop-shadow(1px 2px rgba(10, 12, 15, 0.9));
   font-family: 'Beth Ellen', sans-serif;
-  font-size: 14vw;
-  transform: translateZ(0);
+  font-size: 26vw;
+  margin-left: -8vw;
+  position: relative;
+  top: -19vh;
+  text-align: center;
+}
+@media (min-width: 760px) {
+  h1 {
+    font-size: 13vw;
+    margin-left: 0;
+    padding-left: 5vw;
+    text-align: left;
+    top: -11vh;
+  }
 }
 h1 > span {
   display: block;
+  line-height: 1.3;
+}
+h1 > span:last-child {
+  font-size: 14vw;
+  margin-top: -3vw;
+  padding-left: 11vw;
+}
+@media (min-width: 760px) {
+  h1 > span:last-child {
+    font-size: 8vw;
+  }
 }
 #h1LetterA {
   font-weight: 700;
-  letter-spacing: -3vw;
+  letter-spacing: -5vw;
+}
+@media (min-width: 760px) {
+  #h1LetterA {
+    letter-spacing: -3vw;
+  }
 }
 #h2 {
   font-family: 'Beth Ellen', sans-serif;
@@ -69,7 +97,7 @@ h2 > span:last-child:before {
 #mountain1 {
   background-size: auto 38%;
   filter: invert(1) hue-rotate(8deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(2px 4px 6px #000000) brightness(0.6);
-  bottom: 6vh;
+  bottom: 5vh;
   height: 36vh;
 }
 #mountain2 {
@@ -82,7 +110,7 @@ h2 > span:last-child:before {
 #movingWater {
   position: absolute;
   bottom: 6vh;
-  height: 12vh;
+  height: 8vh;
   width: 100%;
 }
 #mountain3 {
