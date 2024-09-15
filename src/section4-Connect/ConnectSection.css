@@ -5,6 +5,7 @@ section#connectSection {
   flex-wrap: nowrap;
   min-height: 0;
   padding: 12vh 0;
+  z-index: 1;
 }
 @media (min-width: 760px) {
   section#connectSection {
