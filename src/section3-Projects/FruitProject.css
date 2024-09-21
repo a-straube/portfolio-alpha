@@ -44,7 +44,6 @@
   z-index: 1;
 }
 #mahindraProject .fruit > img:last-child {
-  transition: all 1s ease-in-out;
   top: -54vh;
   left: 2vw;
 }
@@ -71,6 +70,7 @@
   width: 30vw;
   max-width: 500px;
   position: absolute;
+  z-index: 1;
 }
 .fruit {
   height: 100%;
@@ -78,6 +78,7 @@
 }
 .fruit > img {
   position: absolute;
+  transition: all 1s ease-in-out;
 }
 .fruit .inside-fruit {
   transition: 0.6s all ease-in-out;
