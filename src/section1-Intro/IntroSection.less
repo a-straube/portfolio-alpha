@@ -61,23 +61,32 @@ h1 {
 
 #h2 {
     font-family: 'Beth Ellen', sans-serif;
-    position: absolute; top: 40vh; right: 18vw;
+    position: absolute; top: 30vh; right: 18vw;
     span {
         display: block;
+        margin-bottom: 20px;
+        position: relative;
         text-align: right;
     }
 }
 
+h2>span:last-child { right: -3vw; }
+
 h2>span:before {
     content: '';
-    background-size: cover;
-    height: 150%; width: 150%;
-    position: absolute;
+    height: 400%; width: 180%;
+    position: absolute; top: -140%;
     z-index: -1;
 }
 
-h2>span:first-child:before { background-image: url('./../img/watercolor-cloud-1.png'); }
-h2>span:last-child:before { background-image: url('./../img/watercolor-cloud-2.png'); }
+h2>span:first-child:before {
+    background: url('./../img/watercolor-cloud-1.png') center/auto 100% no-repeat;
+    left: -40%;
+}
+h2>span:last-child:before {
+    background: url('./../img/watercolor-cloud-2.png') center/auto 100% no-repeat;
+    left: -10%;
+}
 
 .mountain {
     background: url('./../img/Pngtree-mountain-landscape_8807747.png') repeat-x;
