@@ -1,7 +1,6 @@
 #introSection {
   background: linear-gradient(to bottom, #108DC5, #ef8e38 62%, #0a5b81);
   background-attachment: fixed;
-  height: 100vh;
   position: relative;
   overflow: hidden;
 }
