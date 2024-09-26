@@ -7,4 +7,58 @@
 #projectsWater {
     height: 11vh; width: 100%;
     position: relative; bottom: -20vh;
-  }
+}
+
+#boat {
+    max-width: 550px;
+    position: absolute; left: 29vw;
+    z-index: 1;
+    img {
+        transform: rotate(-5deg) rotateX(61deg);
+        width: 100%;
+    }
+}
+
+#sail {
+    // .pos(absolute,-37vh,auto,7vw);
+    border-bottom: 46vh solid #efe8de;
+    border-right: 18vw solid transparent;
+    border-radius: 5px;
+    height: 0; width: 0;
+    z-index: 1;
+    &:before { // MAST
+        content: '';
+        // .pos(absolute,0,auto,-12px);
+        background-color: rgb(84, 19, 19);
+        border-top: 5px solid #646464;
+        border-radius: 4px;
+        height: 50vh; width: 10px;
+        z-index: 1;
+    }
+    &:after { // BOOM
+        content: '';
+        // .pos(absolute,45.5vh,auto,-1px);
+        background-color: rgb(84, 19, 19);
+        border-radius: 3px;
+        height: 5px;
+        width: 18vw;
+    }
+}
+
+#sailText {
+    // .pos(absolute,-8vh,auto,8.5vw);
+    font-family: 'Beth Ellen';
+    font-size: 2.5vw;
+    line-height: 1.3;
+    transform-origin: left;
+    z-index: 1;
+    >span {
+        display: block;
+        &:nth-child(2) {
+            font-size: 1.25vw;
+            line-height: 2;
+            position: absolute;
+        }
+        &:last-child { padding-left: 4vw; }
+    }
+}

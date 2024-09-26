@@ -9,3 +9,55 @@
   position: relative;
   bottom: -20vh;
 }
+#boat {
+  max-width: 550px;
+  position: absolute;
+  left: 29vw;
+  z-index: 1;
+}
+#boat img {
+  transform: rotate(-5deg) rotateX(61deg);
+  width: 100%;
+}
+#sail {
+  border-bottom: 46vh solid #efe8de;
+  border-right: 18vw solid transparent;
+  border-radius: 5px;
+  height: 0;
+  width: 0;
+  z-index: 1;
+}
+#sail:before {
+  content: '';
+  background-color: #541313;
+  border-top: 5px solid #646464;
+  border-radius: 4px;
+  height: 50vh;
+  width: 10px;
+  z-index: 1;
+}
+#sail:after {
+  content: '';
+  background-color: #541313;
+  border-radius: 3px;
+  height: 5px;
+  width: 18vw;
+}
+#sailText {
+  font-family: 'Beth Ellen';
+  font-size: 2.5vw;
+  line-height: 1.3;
+  transform-origin: left;
+  z-index: 1;
+}
+#sailText > span {
+  display: block;
+}
+#sailText > span:nth-child(2) {
+  font-size: 1.25vw;
+  line-height: 2;
+  position: absolute;
+}
+#sailText > span:last-child {
+  padding-left: 4vw;
+}
