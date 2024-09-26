@@ -6,6 +6,7 @@ import coconutHandRight from './pexels-cottonbro-studio-4631073-cartoon-right.pn
 import pineappleHandLeft from './pexels-shvets-production-7194810-cartoon-left.png';
 import pineappleHandRight from './pexels-shvets-production-7194810-cartoon-right.png';
 import trelloScreenshot from './trello-project-mgmt-screenshot.jpg';
+import boat from './Pngtree-yellow-wooden-boat_4724839.png';
 
 export default {
     'plant1':plant1,
@@ -15,5 +16,6 @@ export default {
     'coconutHandRight': coconutHandRight,
     'pineappleHandLeft': pineappleHandLeft,
     'pineappleHandRight': pineappleHandRight,
-    'trelloScreenshot': trelloScreenshot
+    'trelloScreenshot': trelloScreenshot,
+    'boat': boat
 }
