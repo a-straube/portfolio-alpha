@@ -3,10 +3,9 @@
   background-position: 0 -45px;
   background-size: auto 168%;
   display: block;
-  height: 70%;
-  width: 200%;
   position: relative;
   left: -50%;
+  width: 200%;
 }
 .water-row:before,
 .water-row:after {
@@ -26,4 +25,31 @@
   bottom: -15%;
   height: 110%;
   filter: hue-rotate(344deg);
+}
+.water-row:nth-child(1) {
+  height: 40%;
+}
+.water-row:nth-child(2) {
+  height: 45%;
+}
+.water-row:nth-child(3) {
+  height: 50%;
+}
+.water-row:nth-child(4) {
+  height: 55%;
+}
+.water-row:nth-child(5) {
+  height: 60%;
+}
+.water-row:nth-child(6) {
+  height: 65%;
+}
+.water-row:nth-child(7) {
+  height: 70%;
+}
+.water-row:nth-child(8) {
+  height: 75%;
+}
+.water-row:nth-child(9) {
+  height: 80%;
 }
