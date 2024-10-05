@@ -7,7 +7,7 @@ function AboutMeSection() {
         <section id="aboutMeSection">
             <div className="section-content">
                 <div id="lamp">Placeholder</div>
-                <Carousel id="book">
+                <Carousel id="book" interval={null} >
                     <Carousel.Item>
                         <Carousel.Caption>
                             <h3>About Me</h3>
