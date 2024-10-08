@@ -3,6 +3,7 @@
 #aboutMeSection {
     background: #fffec6;
     display: flex; align-items: flex-end;
+    @media(max-width: @screen-sm) { align-items:flex-start; }
     .section-content { z-index: 1; }
     &:after {
         content: '';
@@ -16,15 +17,16 @@
 }
 
 #book {
-    min-height: 55vh;
-    position: absolute; bottom: 15vh; left: 10%;
+    height: 55vh;
+    width: 100%;
     z-index: 2;
     @media(min-width: @screen-sm) {
-        left: 6%;
-        width: 30vw;
+        position: absolute; bottom: 14vh; left: 4vw;
+        width: 600px;
     }
     @media(min-width: @screen-lg) {
-        left: 10vw;
+        left: 6vw;
+        width: 800px;
     }
     &:after {
         content: '';
@@ -33,12 +35,21 @@
         height: 166%; width: 117%;
          position: absolute; top: -23vh; left: -6vw;
         transform: rotate(-9deg) skewY(-6deg);
+        z-index: -1;
         @media(max-width: @screen-sm) { display: none; }
     }
 }
 
+.carousel-indicators { display: none; }
+
+.carousel-inner { padding: 6vh 0; }
+
+.carousel-item { height: 100%; }
+
 .carousel-caption {
+    bottom: auto;
     color: #000000;
+    text-align: left;
 }
 
 #deskPlant1 {

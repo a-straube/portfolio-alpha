@@ -3,6 +3,11 @@
   display: flex;
   align-items: flex-end;
 }
+@media (max-width: 760px) {
+  #aboutMeSection {
+    align-items: flex-start;
+  }
+}
 #aboutMeSection .section-content {
   z-index: 1;
 }
@@ -22,21 +27,22 @@
   }
 }
 #book {
-  min-height: 55vh;
-  position: absolute;
-  bottom: 15vh;
-  left: 10%;
+  height: 55vh;
+  width: 100%;
   z-index: 2;
 }
 @media (min-width: 760px) {
   #book {
-    left: 6%;
-    width: 30vw;
+    position: absolute;
+    bottom: 14vh;
+    left: 4vw;
+    width: 600px;
   }
 }
 @media (min-width: 1200px) {
   #book {
-    left: 10vw;
+    left: 6vw;
+    width: 800px;
   }
 }
 #book:after {
@@ -49,14 +55,26 @@
   top: -23vh;
   left: -6vw;
   transform: rotate(-9deg) skewY(-6deg);
+  z-index: -1;
 }
 @media (max-width: 760px) {
   #book:after {
     display: none;
   }
 }
+.carousel-indicators {
+  display: none;
+}
+.carousel-inner {
+  padding: 6vh 0;
+}
+.carousel-item {
+  height: 100%;
+}
 .carousel-caption {
+  bottom: auto;
   color: #000000;
+  text-align: left;
 }
 #deskPlant1 {
   max-width: 248px;
