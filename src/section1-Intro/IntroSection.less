@@ -63,28 +63,35 @@ h1 {
     position: absolute; top: 30vh; right: 18vw;
     span {
         display: block;
+        color: #072451;
+        filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
         margin-bottom: 20px;
         position: relative;
         text-align: right;
     }
 }
-
-h2>span:last-child { right: -3vw; }
+#cloud2 {
+    bottom: -50px; right: -3vw;
+}
 
 h2>span:before {
     content: '';
+    filter: blur(1px);
     height: 400%; width: 180%;
-    position: absolute; top: -140%;
+    position: absolute;
     z-index: -1;
 }
 
 h2>span:first-child:before {
     background: url('./../img/watercolor-cloud-1.png') center/auto 100% no-repeat;
+    top:-176%;
     left: -40%;
 }
 h2>span:last-child:before {
     background: url('./../img/watercolor-cloud-2.png') center/auto 100% no-repeat;
-    left: -10%;
+    height: 360%;
+    top: -120%;
+    left: -20%;
 }
 
 .mountain {
