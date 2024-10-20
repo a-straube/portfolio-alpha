@@ -36,10 +36,10 @@ function IntroSection() {
             <Parallax speed={-28} id='movingWater'>
                 <MovingWater />
             </Parallax>
-            <Parallax speed={-44}>
+            <Parallax speed={-300}>
                 <h1><span><span id='h1LetterA'>A</span>xel</span> <span>Straube</span></h1>
             </Parallax>
-            <Parallax speed={-24} id='h2'>
+            <Parallax speed={-30} id='h2'>
                 <h2><span id="cloud1">Front-End</span> <span id="cloud2">Developer</span></h2>
             </Parallax>
             <Parallax speed={-8} id='mountain3' className='mountain'></Parallax>
