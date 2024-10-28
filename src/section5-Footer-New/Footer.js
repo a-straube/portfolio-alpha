@@ -1,4 +1,4 @@
-import imgs from '.././img/imgs';
+import imgs from '../img/imgs';
 
 function Footer() {
     return (
@@ -18,17 +18,17 @@ function Footer() {
                     <div id="creditsCardBody">
                         <ul id="credits">
                             <li>
-                                {/* <img src={imgs.} alt="png image from pngtree.com" /> */}
+                                <img src={imgs.cloud} alt="png image from pngtree.com" />
                                 <span><a href='https://pngtree.com/freepng/watercolor-clouds-blue-cloud-sky_6409065.html' target="_blank">png image from pngtree.com/</a></span>
                             </li>
                             {/* <li>
                                 <img src="img/Pngtree-8910691-lamp.png" alt="Hand Drawn Cartoon Illustration PNG Designed by 58pic" />
                                 <span>Hand Drawn Cartoon Illustration PNG Designed by 58pic from https://pngtree.com/freepng/hand-drawn-cartoon-illustration-desk-lamp-cute-element-stationery_8910691.html</span>
                             </li> */}
-                            <li>
-                                {/* <img src="img/pexels-anna-shvets-11124886-cartoon-top.png" alt="Photo by Anna Shvets from Pexels" /> */}
+                            {/* <li>
+                                <img src="img/pexels-anna-shvets-11124886-cartoon-top.png" alt="Photo by Anna Shvets from Pexels" />
                                 <span>Photo by Anna Shvets from Pexels: https://www.pexels.com/photo/person-holding-a-sliced-pineapple-on-yellow-background-11124886/</span>
-                            </li>
+                            </li> */}
                             <li>
                                 {/* <img src="img/pexels-shvets-production-7194810-cartoon-right.png" alt="Photo by SHVETS production from Pexels" /> */}
                                 <span>Photo by SHVETS production from Pexels: https://www.pexels.com/photo/unrecognizable-person-with-halved-pineapple-7194810/</span>
