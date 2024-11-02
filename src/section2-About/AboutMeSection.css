@@ -1,5 +1,6 @@
 #aboutMeSection {
-  background: #fffec6;
+  background: transparent url('../img/Pngtree-mountain-landscape_8807747.png') no-repeat;
+  background-size: auto 70%;
   display: flex;
   align-items: flex-end;
 }
