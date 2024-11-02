@@ -7,10 +7,10 @@ import MovingWater from '../global-components/MovingWater'
 function IntroSection() {
     useGSAP(() => {
         gsap.to('#cloud1', {
-            duration: 5,
+            duration: 8,
             x: -15,
             y: -5,
-            scale: 1.05,
+            scale: 0.92,
             repeat: -1,
             repeatDelay: 0,
             ease: "power1.in",
@@ -19,8 +19,8 @@ function IntroSection() {
         gsap.to('#cloud2', {
             duration: 15,
             x: 60,
-            y: -10,
-            scale: 1.2,
+            y: -15,
+            scale: 0.85,
             repeat: -1,
             repeatDelay: 0,
             ease: "power1.in",
