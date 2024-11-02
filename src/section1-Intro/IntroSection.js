@@ -26,6 +26,12 @@ function IntroSection() {
             ease: "power1.in",
             yoyo: true,
         })
+        gsap.to('h1', {
+            duration: 1000,
+            backgroundPositionX: '1000%',
+            repeat: -1,
+            yoyo: true,
+        })
     })
 
     return (
