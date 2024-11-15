@@ -49,6 +49,7 @@ function IntroSection() {
                 <h2><span id="cloud1">Front-End</span> <span id="cloud2">Developer</span></h2>
             </Parallax>
             <Parallax speed={-8} id='mountain3' className='mountain'></Parallax>
+            <Parallax speed={-2} id='mountain4' className='mountain'></Parallax>
         </section>
     );
 }

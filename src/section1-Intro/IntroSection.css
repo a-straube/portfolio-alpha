@@ -2,7 +2,7 @@
   background: url('../img/pexels-8moments-1323550.jpg') top center;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
 }
 #sun {
   background: radial-gradient(circle, #efb938 33%, #ef8e38 100%);
@@ -131,5 +131,11 @@ h2 > span:last-child:before {
   bottom: -4vh;
   left: -37%;
   filter: invert(1) hue-rotate(180deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(0px -2px 4px rgba(30, 28, 26, 0.75)) brightness(0.75);
+  height: 60vh;
+}
+#mountain4 {
+  bottom: -30vh;
+  left: -37%;
+  filter: invert(1) hue-rotate(8deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(2px 4px 6px #000000) brightness(0.9);
   height: 50vh;
 }
