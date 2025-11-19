@@ -14,7 +14,7 @@ function Footer() {
                 <p>
                     <button type="button" data-bs-toggle="collapse" data-bs-target="#creditsCollapse" aria-expanded="false" aria-controls="creditsCollapse">Image Credits </button>
                 </p>
-                <div class="collapse" id="creditsCollapse">
+                <div className="collapse" id="creditsCollapse">
                     <div id="creditsCardBody">
                         <ul id="credits">
                             <li>
