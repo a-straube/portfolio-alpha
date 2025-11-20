@@ -10,6 +10,7 @@
   }
 }
 #aboutMeSection .section-content {
+  justify-content: flex-end;
   z-index: 1;
 }
 #aboutMeSection:after {
@@ -27,13 +28,18 @@
     height: 38vh;
   }
 }
+#lamp {
+  display: none;
+}
 #book {
-  height: 55vh;
+  height: 100vh;
   width: 100%;
   z-index: 2;
 }
 @media (min-width: 760px) {
   #book {
+    background: none;
+    height: 55vh;
     position: absolute;
     bottom: 14vh;
     left: 4vw;
@@ -44,6 +50,17 @@
   #book {
     left: 6vw;
     width: 800px;
+  }
+}
+@media (max-width: 760px) {
+  #book:before {
+    background: transparent url('../img/Pngtree-mountain-landscape_8807747.png') bottom right no-repeat;
+    background-size: auto 100%;
+    content: '';
+    filter: hue-rotate(274deg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
 #book:after {
@@ -84,7 +101,7 @@
   right: -33vw;
   z-index: 1;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
   #deskPlant1 {
     display: none;
   }
@@ -92,7 +109,7 @@
 #picture {
   position: relative;
   bottom: 21vh;
-  right: -14vw;
+  right: -5vw;
   width: 27%;
 }
 @media (max-width: 992px) {
@@ -106,6 +123,11 @@
   bottom: 13vh;
   right: 1vw;
   z-index: 1;
+}
+@media (max-width: 760px) {
+  #deskPlant2 {
+    display: none;
+  }
 }
 #pictureFrame {
   background-color: #ebe7db;

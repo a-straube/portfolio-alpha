@@ -5,7 +5,10 @@
     background-size: auto 70%;
     display: flex; align-items: flex-end;
     @media(max-width: @screen-sm) { align-items:flex-start; }
-    .section-content { z-index: 1; }
+    .section-content {
+        justify-content: flex-end;
+        z-index: 1;
+    }
     &:after {
         content: '';
         background: url('./../img/wood.jpg') bottom;
@@ -17,17 +20,31 @@
     }
 }
 
+#lamp { display: none; } // work on later
+
 #book {
-    height: 55vh;
+    height: 100vh;
     width: 100%;
     z-index: 2;
     @media(min-width: @screen-sm) {
+        background: none;
+        height: 55vh;
         position: absolute; bottom: 14vh; left: 4vw;
         width: 600px;
     }
     @media(min-width: @screen-lg) {
         left: 6vw;
         width: 800px;
+    }
+    &:before {
+        @media(max-width: @screen-sm) {
+            background: transparent url('./../img/Pngtree-mountain-landscape_8807747.png') bottom right no-repeat;
+            background-size: auto 100%;
+            content: '';
+            filter: hue-rotate(274deg);
+            height: 100%; width: 100%;
+            position: absolute;
+        }
     }
     &:after {
         content: '';
@@ -57,11 +74,11 @@
     max-width: 248px;
     position: relative; bottom: 16vh; right: -33vw;
     z-index: 1;
-    @media(max-width: @screen-lg) { display: none; }
+    @media(max-width: 1800px) { display: none; }
 }
 
 #picture {
-    position: relative; bottom: 21vh; right: -14vw;
+    position: relative; bottom: 21vh; right: -5vw;
     width: 27%;
     @media(max-width: @screen-md) { display: none; }
 }
@@ -70,6 +87,7 @@
     max-width: 266px;
     position: relative; bottom: 13vh; right: 1vw;
     z-index: 1;
+    @media(max-width: @screen-sm) { display: none; }
 }
 
 #pictureFrame {
