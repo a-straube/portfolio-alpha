@@ -10,6 +10,7 @@
   }
 }
 #aboutMeSection .section-content {
+  height: 100%;
   justify-content: flex-end;
   z-index: 1;
 }
@@ -18,14 +19,14 @@
   background: url('../img/wood.jpg') bottom;
   background-size: cover;
   filter: brightness(0.44) contrast(0.95);
-  height: 30vh;
+  height: 38vh;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   #aboutMeSection:after {
-    height: 38vh;
+    display: none;
   }
 }
 #lamp {
