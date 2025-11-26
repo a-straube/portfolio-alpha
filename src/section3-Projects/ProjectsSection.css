@@ -8,11 +8,12 @@
   height: 11vh;
   width: 100%;
   position: relative;
-  bottom: -20vh;
+  bottom: -26vh;
 }
 #boat {
   max-width: 550px;
   position: absolute;
+  bottom: 140vh;
   left: 29vw;
   z-index: 1;
 }

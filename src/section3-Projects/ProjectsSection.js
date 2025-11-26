@@ -23,16 +23,12 @@ function ProjectSection() {
                 fruitRight={imgs.pineappleHandRight}
                 screenshot="https://web.archive.org/web/20221013003713im_/https://www.mahindrausa.com/images/pages/byo/byo-max-26-xlt-hst.jpg"
             />
-            <Parallax id="boat" speed={-35}>
+            <Parallax id="boat" speed={-700}>
                 <div id="sail"></div>
-                <div id="sailText">
-                    <span>Fruits</span>
-                    <span>of my</span>
-                    <span>Labor</span>
-                </div>
+                <div id="sailText"><span>Fruits</span> <span>of my</span> <span>Labor</span></div>
                 <img src={imgs.boat} alt="Boat" />
             </Parallax>
-            <Parallax speed={-40}>
+            <Parallax speed={-1200}>
                 <MovingWater id="projectsWater" />
             </Parallax>
         </section>
