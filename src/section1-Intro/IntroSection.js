@@ -36,8 +36,8 @@ function IntroSection() {
 
     return (
         <section id='introSection'>
-            <Parallax speed={4} id='sun'></Parallax>
-            <Parallax speed={-40} id='mountain1' className='mountain'></Parallax>
+            <Parallax speed={2} id='sun'></Parallax>
+            <Parallax speed={-38} id='mountain1' className='mountain'></Parallax>
             <Parallax speed={-34} id='mountain2' className='mountain'></Parallax>
             <Parallax speed={-28} id='movingWater'>
                 <MovingWater />
@@ -45,8 +45,8 @@ function IntroSection() {
             <Parallax speed={-100} id='h2'>
                 <h2><span id="cloud1">Front-End</span> <span id="cloud2">Developer</span></h2>
             </Parallax>
-            <Parallax speed={-8} id='mountain3' className='mountain'></Parallax>
-            <Parallax speed={-2} id='mountain4' className='mountain'></Parallax>
+            <Parallax speed={-34} id='mountain3' className='mountain'></Parallax>
+            <Parallax speed={-18} id='mountain4' className='mountain'></Parallax>
             <Parallax speed={-600}>
                 <h1><span><span id='h1LetterA'>A</span>xel</span> <span>Straube</span></h1>
             </Parallax>
